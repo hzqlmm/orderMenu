@@ -1,0 +1,2 @@
+[27-Jul-2013 11:27:54 UTC] PHP Parse error:  syntax error, unexpected 'header' (T_STRING), expecting ',' or ';' in D:\Tools\httpd-2.4.6-win64\Apache24\htdocs\lib\cls\cls.app.php on line 35
+[27-Jul-2013 13:48:15 UTC] PHP Fatal error:  Call to undefined function mb_convert_encoding() in D:\Tools\httpd-2.4.6-win64\Apache24\htdocs\lib\fun\fun.format.php on line 24
