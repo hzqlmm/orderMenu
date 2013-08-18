@@ -1,8 +1,8 @@
 <?php
-/* 
- * 
- * 
- * 
+/* KLKKDJ订餐之单店版
+ * 版本号：3.1版
+ * 官网：http://www.klkkdj.com
+ * 2013-03-24
  */
 class cls_app{
 	static $viewdir;
@@ -16,7 +16,6 @@ class cls_app{
 		(isset($app['app'])) ? $str_app = $app['app'] : $str_app = fun_get::get("app");
 		(isset($app['app_act'])) ? $str_act = $app['app_act'] : $str_act = fun_get::get("app_act");
 		(isset($app['app_module'])) ? $str_module = $app['app_module'] : $str_module = fun_get::get("app_module");
-
 		if(empty($str_app)) {
 			$str_app = "index";
 		}
@@ -28,7 +27,6 @@ class cls_app{
 		}else{
 			error_reporting(E_ALL);//报告所有错误
 		}
-
 		(cls_config::DB_CHARSET == "utf8")? $str_charset = "utf-8" : $str_charset = cls_config::DB_CHARSET;
 		header('P3P: CP="CURa ADMa DEVa PSAo PSDo OUR BUS UNI PUR INT DEM STA PRE COM NAV OTC NOI DSP COR"');
 		if(!isset($_GET['app_contenttype'])) header('Content-Type:text/html;charset='.$str_charset);//当非附件或非图片时输出

@@ -17,9 +17,13 @@
 	<div class="list w1">
 		{foreach($arr_menu["tj"] as $menu)}
 		<ul>
-			<li><h2><a href="javascript:jsshop.cart_add({id:'{$menu['menu_id']}',name:'{$menu['menu_title']}',pic:'{$menu['menu_pic_small']}',price:'{$menu['menu_price']}',type:'{$menu['menu_type']}'});">{$menu['menu_title']}</a></h2></li>
+			<li class="info">
+				<a href="javascript:jsshop.cart_add({id:'{$menu['menu_id']}',name:'{$menu['menu_title']}',pic:'{$menu['menu_pic_small']}',price:'{$menu['menu_price']}',type:'{$menu['menu_type']}'});">￥{$menu['price_int']}  {$menu['menu_title']}
+				</a>
+			</li>
+<!-- 			<li><h2><a href="javascript:jsshop.cart_add({id:'{$menu['menu_id']}',name:'{$menu['menu_title']}',pic:'{$menu['menu_pic_small']}',price:'{$menu['menu_price']}',type:'{$menu['menu_type']}'});">{$menu['menu_title']}</a></h2></li> -->
 			<li class="pic"><img src="{$menu['menu_pic']}" onclick="jsshop.cart_add({id:'{$menu['menu_id']}',name:'{$menu['menu_title']}',pic:'{$menu['menu_pic_small']}',price:'{$menu['menu_price']}',type:'{$menu['menu_type']}'});"></li>
-			<li><span style="float:left"><font style="color:#CC0000;font-size:24px">￥{$menu['price_int']}</font><font style="color:#CC0000;font-size:16px">.{$menu['price_float']}</font><br><a href="javascript:jsshop.comment({$menu['menu_id']});">评论：{$menu['menu_comment_num']}条</a></span><span style="float:right"><input type="button" name="btnse" value="订一份" class="button1" onclick="jsshop.cart_add({id:'{$menu['menu_id']}',name:'{$menu['menu_title']}',pic:'{$menu['menu_pic_small']}',price:'{$menu['menu_price']}',type:'{$menu['menu_type']}'});"></span></li>
+			<!-- <li><span style="float:left"><font style="color:#CC0000;font-size:24px">￥{$menu['price_int']}</font><font style="color:#CC0000;font-size:16px">.{$menu['price_float']}</font><br><a href="javascript:jsshop.comment({$menu['menu_id']});">评论：{$menu['menu_comment_num']}条</a></span><span style="float:right"><input type="button" name="btnse" value="订一份" class="button1" onclick="jsshop.cart_add({id:'{$menu['menu_id']}',name:'{$menu['menu_title']}',pic:'{$menu['menu_pic_small']}',price:'{$menu['menu_price']}',type:'{$menu['menu_type']}'});"></span></li> -->
 		</ul>
 		{/foreach}
 	</div>
@@ -41,7 +45,7 @@
 </div>
 <div class="right" id="id_right">
 	<li class="pic"><span><img src="{cfg:(shop_logo,view)}">&nbsp;</span><a href="javascript:window.external.AddFavorite(location.href,document.title);" class="xcollect">收藏</a></li>
-	<li class="info"><span class='xtit'>{cfg:(shop_name,view)}</span><span><font color="#666666">餐品：</font>{$shop_menunum}</span><span><a href="javascript:jsheader.comment_shop()"><font color="#666666">评论：</font>{$shop_commentnum}</span></a></li>
+	<li class="info"><span class='xtit'>{cfg:(shop_name,view)}</span><span><font color="#fc0062">餐品：</font>{$shop_menunum}</span><span><a href="javascript:jsheader.comment_shop()" style="color:#fc0062"><font color="#fc0062">评论：</font>{$shop_commentnum}</span></a></li>
 	{if(!empty($opentime['cont']))}
 	<li class="tit">{$opentime['title']}</li>
 	<li>{$opentime['cont']}</li>

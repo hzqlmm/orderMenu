@@ -196,7 +196,7 @@ function setval(s){
 		<a href="javascript:thisjs.cache_show();">更新缓存</a>&nbsp;&nbsp;
 		<?php }?>
 		当前用户：<font color="#ff8800"><?php echo $user->uname;?></font><?php if($this_limit->chk_app('common' , 'sys') && $this_limit->chk_act('update_pwd' , 'common' , 'sys')){?> <a href="javascript:thisjs.update_pwd_show();" style="color:#ffffff">(修改密码)</a><?php }?>&nbsp;
-		<a href="http://127.0.0.1/common.php?app=sys&app_act=login.out" style="color:#ffffff" target="_top">退出系统</a>
+		<a href="http://localhost/common.php?app=sys&app_act=login.out" style="color:#ffffff" target="_top">退出系统</a>
 		</li>
 	</div>
 	<div class="x_menu" id="id_menu_div">

@@ -2,47 +2,17 @@
 <script src="/webcss/common/js/kj.js"></script>
 <script src="/webcss/common/js/kj.dialog.js"></script>
 <script src="/webcss/common/js/kj.ajax.js"></script>
-<link href="/webcss/bootstrap/css/bootstrap.css" rel="stylesheet">
-<link href="/webcss/bootstrap/css/dropdown.css" rel="stylesheet">
-<div class="navbar navbar-inverse">
-	<div class="container">
-		<a class="navbar-brand" href="#">麦兜外卖</a>
-		<div class="nav-collapse collapse">
-			<ul class="nav navbar-nav">
-				<li class="active">
-					<a href="./" title="网站首页">首页</a>
-				</li>
-				<li>
-					<a href="./?app_act=cart" title="我的购物车">购物车</a>
-				</li>
-				<li>
-					<a href="./?app_act=help" title="关于我们">关于我们</a>
-				</li>
-				<li>	
-					<a href="javascript:void(0);" onmouseover="jsheader.over(this,1)" onmouseout="jsheader.out(this,1)">用户名</a>
-				</li>
-				<li class="dropdown">
-		              <a data-toggle="dropdown" class="dropdown-toggle" href="#">Dropdown <b class="caret"></b></a>
-		              <ul class="dropdown-menu">
-		                <li><a href="#">Another action</a></li>
-		                <li><a href="#">Something else here</a></li>
-		                <li class="divider"></li>
-		                <li class="nav-header">Nav header</li>
-		                <li><a href="#">Separated link</a></li>
-		                <li><a href="#">One more separated link</a></li>
-		              </ul>
-            	</li>
-			</ul>
-
-			<form class="navbar-form form-inline pull-right">
-	            <input type="text" placeholder="Email">
-	            <input type="password" placeholder="Password">
-	            <button type="submit" class="btn">Sign in</button>
-          	</form>
-		</div>
-	</div>
+<div class="top">
+	<ul class="main">
+	<li class="logo"><img src="/webcss/default/images/logo.png"></li>
+	<li class="menu">
+		<a href="./" title="网站首页"><img src="/webcss/default/images/menu_1.png"></a>
+		<a href="./?app_act=cart" title="我的购物车"><img src="/webcss/default/images/menu_3.png"></a>
+		<a href="./?app_act=help" title="关于我们"><img src="/webcss/default/images/menu_7.png"></a>
+		<a href="javascript:void(0);" onmouseover="jsheader.over(this,1)" onmouseout="jsheader.out(this,1)"><img src="/webcss/default/images/menu_4.png"></a>
+	</li>
+	</ul>
 </div>
-
 <div class="main">
 <?php if($this_login_user->uid>0){?>
 <div class="xiala" id="id_menu1" onmouseover="jsheader.sel(this);" onmouseout="jsheader.unsel(this);" style="display:none">
@@ -63,6 +33,8 @@
 	<li class="x2"><img src="/webcss/default/images/menu_5.png"></li>
 	<li class="x1">
 		<span class="y1"><input type='button' name='btn_login' value='登录' class="button2" onclick="jsheader.showlogin();"><br><br><input type='button' name='btn_reg' value='注册' class="button2x" onclick="jsheader.showreg();"></span>
+		<span class="y2">使用其它账号登录</span>
+		<span class="y1"><img src="/webcss/default/images/btn_sina.png"><br><br><img src="/webcss/default/images/btn_qq.png"></span>
 	</li>
 </div>
 <div id="id_loginbox" style="display:none">
@@ -75,6 +47,11 @@
 			<li><span class="x1"></span><span><label><input type="checkbox" name="autologin" value="1" checked>下次自动登录</label>&nbsp;&nbsp;<a href="?app=index&app_act=findpwd">忘记密码?</a><br><br>
 			<input type="submit" name="btn_submit" value="登 录" class="button1" style="font-size:22px">
 			</span></li>
+		</ul>
+		<ul class="xright">
+			<li>使用其它账号登录：</li>
+			<li><img src="/webcss/default/images/btn_sina.png"></li>
+			<li><img src="/webcss/default/images/btn_qq.png"></li>
 		</ul>
 		<ul class="xboot a1">
 		<h1>还不是会员？</h1>一分钟轻松注册，就可以方便订餐<a href="javascript:jsheader.showreg();">【立即注册】</a>

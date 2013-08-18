@@ -2,7 +2,7 @@
 define('UC_CONNECT', 'mysql');
 define('UC_DBHOST', 'localhost');
 define('UC_DBUSER', 'root');
-define('UC_DBPW', '');
+define('UC_DBPW', '654321');
 define('UC_DBNAME', 'dz2');
 define('UC_DBCHARSET', 'utf8');
 define('UC_DBTABLEPRE', '`dz2`.pre_ucenter_');

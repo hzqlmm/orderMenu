@@ -1,8 +1,8 @@
 <?php
-/* 
- * 
- * 
- * 
+/* KLKKDJ订餐之单店版
+ * 版本号：3.1版
+ * 官网：http://www.klkkdj.com
+ * 2013-03-24
  */
 class fun_get{
 	static function get($msg_name , $default = '' , $is_all = true) {
@@ -18,7 +18,6 @@ class fun_get{
 		}
 		return $arr_get[$msg_name];
 	}
-
 	static function post($msg_name , $default = '') {
 		static $arr_post=array();
 		if(!isset($arr_post[$msg_name])) {
@@ -28,7 +27,6 @@ class fun_get{
 		}
 		return $arr_post[$msg_name];
 	}
-	
 	static function filter($str_x,$is_reback=false) {
 		if(is_array($str_x)) {
 			for($i = 0 ; $i < count($str_x);$i++) {
@@ -39,7 +37,6 @@ class fun_get{
 		}
 		return $str_x;
 	}
-	
 	static function filter_base($str_x , $is_reback=false) {
 		/*
         if (function_exists('htmlspecialchars')) {
@@ -59,7 +56,6 @@ class fun_get{
 		}
 		return $str_x;
 	}
-	
 	static function real_path($msgpath,$msgroot = "") {
 		$str_path = fun_format::path($msgpath);
 		(empty($msgroot)) ? $msgroot = fun_format::path(WEB_ROOT):$msgroot == fun_format::path($msgroot);

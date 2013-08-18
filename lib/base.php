@@ -1,4 +1,9 @@
 <?php
+/* KLKKDJ订餐之单店版
+ * 版本号：3.1版
+ * 官网：http://www.klkkdj.com
+ * 2013-03-24
+ */
 //定义常用变量与函数
 define('MAGIC_QUOTES_GPC', get_magic_quotes_gpc());
 if(@date_default_timezone_get() != "Asia/Shanghai") date_default_timezone_set("Asia/Shanghai");

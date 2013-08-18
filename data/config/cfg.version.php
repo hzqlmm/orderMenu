@@ -9,8 +9,8 @@ return array (
   'module' => 'meal',
   'version' => '3.1',
   'version_name' => '3.1 正式版',
-  'installtime' => '2013-08-07 16:22:40',
-  'updatetime' => '2013-08-07 16:22:40',
+  'installtime' => '2013-08-18 12:48:37',
+  'updatetime' => '2013-08-18 12:48:37',
   'components' => 
   array (
     'ads' => 

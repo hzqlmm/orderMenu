@@ -1,7 +1,7 @@
-ï»¿<?php
+<?php
 return array (
 	'id_1' => array(
-		'name' => 'æ¨¡æ¿ä¸€',
+		'name' => 'Ä£°åÒ»',
 		'mod_dir' => 'default',
 		'view_dir' => 'default',
 		'cfg_set' => array(
@@ -14,14 +14,14 @@ return array (
 		),
 	),
 	'id_2' => array(
-		'name' => 'æ¨¡æ¿äºŒ',
+		'name' => 'Ä£°å¶þ',
 		'mod_dir' => 'default',
 		'view_dir' => 'default_1',
 		'cfg_set' => array(
 		),
 	),
 	'id_3' => array(
-		'name' => 'æ¨¡æ¿ä¸‰',
+		'name' => 'Ä£°åÈý',
 		'mod_dir' => 'default',
 		'view_dir' => 'default_1',
 		'cfg_set' => array(
@@ -34,7 +34,7 @@ return array (
 		),
 	),
 	'id_4' => array(
-		'name' => 'æ¨¡æ¿å››',
+		'name' => 'Ä£°åËÄ',
 		'mod_dir' => 'default',
 		'view_dir' => 'default_2',
 		'cfg_set' => array(

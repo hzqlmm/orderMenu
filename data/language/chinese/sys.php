@@ -1,8 +1,8 @@
 <?php
-/* 
- * 
- * 
- * 
+/* KLKKDJ订餐之单店版
+ * 版本号：3.1版
+ * 官网：http://www.klkkdj.com
+ * 2013-03-24
  */
 return array(
 	'error'            => "访问时出现了错误",	//上线环境，提示语
