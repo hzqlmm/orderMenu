@@ -6,10 +6,10 @@
 	<ul class="main">
 	<li class="logo"><img src="/webcss/default/images/logo.png"></li>
 	<li class="menu">
-		<a href="./" title="网站首页"><img src="/webcss/default/images/menu_1.png"></a>
-		<a href="./?app_act=cart" title="我的购物车"><img src="/webcss/default/images/menu_3.png"></a>
-		<a href="./?app_act=help" title="关于我们"><img src="/webcss/default/images/menu_7.png"></a>
-		<a href="javascript:void(0);" onmouseover="jsheader.over(this,1)" onmouseout="jsheader.out(this,1)"><img src="/webcss/default/images/menu_4.png"></a>
+		<a href="./" title="网站首页">主页</a>
+		<!-- <a href="./?app_act=cart" title="我的购物车"><img src="/webcss/default/images/menu_3.png"></a> -->
+		<a href="./?app_act=help" title="关于我们">关于我们</a>
+		<a href="javascript:void(0);" onmouseover="jsheader.over(this,1)" onmouseout="jsheader.out(this,1)">账户</a>
 	</li>
 	</ul>
 </div>

@@ -45,19 +45,19 @@ a:active {color:#ff6600;}
 .w1{width:740px;background:#3d0015}
 .h1{float:left;width:100%;height:40px}
 .main{width:980px;margin:0px auto}
-.top{float:left;width:100%;height:60px;background:url(bg_top1.png);padding:0px;margin-bottom:20px}
+.top{float:left;width:100%;height:60px;background:#fff url(nav-bg.png);padding:0px;margin-bottom:20px}
 .top li{float:left}
 .top .logo{margin-top:3px}
 .top .search{float:right;border:1px #000000 solid;background:#EEEEEE;margin:6px 0px 0px 0px;margin-top:10px;padding:0px}
 .top .search .txt1{height:33px;border:0px;width:300px;background:#EEEEEE;font-size:18px;line-height:33px}
 .top .search .btn1{width:39px;height:38px;border:0px;background:url(btn_search.png) no-repeat}
 .top .menu{float:right;margin-left:10px}
-.top .menu a{float:left;width:60px;height:50px;text-align:center;padding-top:10px}
-.top .menu a:hover {background:url(btn_sel.png) no-repeat}
+.top .menu a{float:left;height:50px;text-align:center;padding-top:20px;padding-left: 20px;font-size: 15px;font-weight: bolder;}
+/*.top .menu a:hover {background:url(btn_sel.png) no-repeat}*/
 .top .menu .xsel{background:url(btn_sel.png) no-repeat}
 
 
-.title{float:left;border-bottom:1px #fc0062 solid;padding:10px 0px 5px 0px;background:#3d0015;}
+.title{float:left;padding:10px 0px 5px 0px;background:#3d0015;}
 .title h1{margin-left:10px;font-weight:200;font-size:20px;float:left;color: #f0cda5}
 .title span{float:left;margin:5px 0px 0px 15px;padding:5px 0px 3px 0px;cursor:pointer}
 .title .sort_asc{color:#ff0000;background:url(sort_up.png) no-repeat right center;padding-right:10px}
@@ -74,15 +74,15 @@ a:active {color:#ff6600;}
 .list li a{color:#f0cda5;font-size: 16px;padding-left: 20px}
 .list h2{font-weight:200;font-size:18px}
 .list2{float:left;padding-bottom:20px}
-.list2 li{float:left;width:270px;padding:8px 0px 5px 0px;margin-left:20px;cursor:pointer;color:#fc0062}
+.list2 li{float:left;width:270px;padding:8px 0px 5px 0px;margin-left:20px;cursor:pointer;color:#fc0062;background:url(dot.gif) repeat-x center;}
 .list2 span{float:left;background:#fff;padding:0px 5px;background:#3d0015}
 .list2 .price{float:right;}
-.list2 .x_sel1{float:left;width:20px;height:20px;background:#fff url(add.gif) no-repeat}
-.list2 .x_sel2{color:#CC0000}
+.list2 .x_sel1{float:left;width:20px;height:20px;background:#3d0015 url(add.gif) no-repeat}
+/*.list2 .x_sel2{color:#CC0000}*/
 .list2 .x_nosel{float:left;width:20px;height:20px;background-color:#3d0015}
 .list2 .xcomment{width:80px;background:none;margin:0px;color:#fc0062}
-.list2 .xcomment a{color:#666}
-.list2 .xcomment a:hover{color:#ff8800}
+.list2 .xcomment a{color:#fc0062}
+/*.list2 .xcomment a:hover{color:#ff8800}*/
 .left{float:left;}
 .right{float:left;width:240px;background:#3d0015}
 .right li{float:left;padding:8px 5px 5px 20px;width:215px;line-height:20px;color:#fc0062}
@@ -93,22 +93,22 @@ a:active {color:#ff6600;}
 .right .info{width:220px;padding:5px 0px 0px 20px;line-height:20px;}
 .right .info .xtit{font-size:18px;width:220px;font-weight:bold}
 .right .info span{float:left;padding:3px 0px 3px 0px;margin-left:10px}
-.right .tit{font-size:14px;font-weight:bold;color:#f0cda5;border-bottom:1px #fc0062 solid;padding-left:10px;width:230px}
+.right .tit{font-size:14px;font-weight:bold;color:#f0cda5;padding-left:10px;width:230px}
 .right .li{}
 .right .li a{float:left;clear:both;width:200px;color:#fc0062}
 
 .testpic{float:left;line-height:200px;height:200px;width:240px;background:#fff;text-align:center;border:1px #ff0000 solid;padding:0px;margin:0px;vertical-align:middle}
 .testpic img{vertical-align:middle;width:60px;height:60px;float:none}
 
-.cart_menu{width:980px;position:fixed;color:#fff;font-size:12px}
+.cart_menu{width:980px;position:fixed;color:#fff;font-size:12px;z-index:1}
 .cart_menu span{float:left;text-align:center}
-.cart_menu .x_top{float:left;width:980px;overflow:hidden;background:#222222}
-.cart_menu .x_1{float:left;font-weight:bold;padding:8px 0px 0px 15px}
-.cart_menu .x_2{float:right;padding:12px 0px 0px 15px}
-.cart_menu .x_3{float:right;padding:6px 0px 0px 5px;font-size:20px}
-.cart_menu .x_4{float:right;width:30px;height:34px;background:url(cart_bg2.png) no-repeat center;border-left:1px #222222 solid;cursor:pointer}
-.cart_menu .x_5{float:right;padding:10px 20px 0px 30px;border-right:1px #222222 solid;height:24px;width:83px;background:url(bg3.gif) no-repeat center;color:#000000;cursor:pointer}
-.cart_menu .x_6{float:right;width:30px;height:34px;background:url(cart_bg1.png) no-repeat center;cursor:pointer}
+.cart_menu .x_top{float:right;width:480px;height:58px;overflow:hidden;background:#fc0062}
+.cart_menu .x_1{float:left;font-weight:bold;padding:15px 0px 0px 15px;height: 50px;font-size: 23px}
+.cart_menu .x_2{float:right;padding:25px 0px 0px 15px}
+.cart_menu .x_3{float:right;padding:18px 0px 0px 5px;font-size:20px}
+.cart_menu .x_4{float:right;width:30px;height:54px;background:url(cart_bg2.png) no-repeat center;cursor:pointer}
+.cart_menu .x_5{float:right;padding:20px 20px 10px 30px;border-right:1px #fff solid;height:28px;width:83px;background:url(bg3.gif) no-repeat center;color:#000000;cursor:pointer}
+.cart_menu .x_6{float:right;width:30px;height:60px;background:url(cart_bg1.png) no-repeat center;cursor:pointer}
 .cart_menu .x_tit{float:left;color:#888888;border-left:1px #222222 solid;border-right:1px #222222 solid;border-bottom:1px #dddddd solid;height:23px;float:left;width:978px;overflow:hidden;background:#fff;padding-top:5px}
 .cart_menu .x_tit li{float:left;width:970px;padding:5px 0px 3px 8px;color:#555555}
 .cart_menu .x_list{float:left;width:978px;overflow-y:scroll;overflow-x:hidden;height:92px;background:#fff;border-left:1px #222222 solid;border-right:1px #222222 solid}
@@ -129,6 +129,8 @@ a:active {color:#ff6600;}
 .cart_menu .x_listpic .x_picli{width:520px}
 .cart_menu .x_listpic .x_picli span{height:60px;width:60px}
 .cart_menu .x_listpic .x_picli .x_plus{background:url(icon_plus.gif) no-repeat center center;width:20px}
+.cart_menu_opacity_bg {background: #f0cda5;opacity: 0.5;height: 65px;width: 100%;position: fixed;left: 0;}
+
 
 .xiala{position:absolute;top:60px;width:150px;z-index:1}
 .xiala .x2{float:left;width:140px;background:url(menu_bg1.png) repeat-x 0px bottom;padding-right:10px;text-align:right;height:14px;}

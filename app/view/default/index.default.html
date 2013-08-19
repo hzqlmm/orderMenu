@@ -14,6 +14,7 @@
 	{fun_kj::get_ads(1)}
 	{if(count($arr_menu["tj"])>0)}
 	<div class="title w1"><h1>新品/推荐</h1></div>
+	<img src="images/dividing-line-740.png">
 	<div class="list w1">
 		{foreach($arr_menu["tj"] as $menu)}
 		<ul>
@@ -31,13 +32,14 @@
 	<div class="w1" style="float:left" id="id_grouplist">
 	{foreach($arr_menu["list"] as $item)}
 	<div class="title w1"><h1>{$item["name"]}<a name="hash_price_{$item['id']}"></a></h1></div>
+	<img src="images/dividing-line-740.png">
 	<div class="list2 w1">
 	{foreach($item['list'] as $menu)}
 		<li onmouseover="jsshop.mouseover('{$menu['menu_id']}');" onmouseout="jsshop.mouseout('{$menu['menu_id']}');" onclick="jsshop.cart_add({id:'{$menu['menu_id']}',name:'{$menu['menu_title']}',pic:'{$menu['menu_pic_small']}',price:'{$menu['menu_price']}',type:'{$menu['menu_type']}'});" id="id_li_{$menu['menu_id']}">
 		<span class="x_nosel" id="id_nosel_{$menu['menu_id']}">&nbsp;</span>
 		<span class="tit" id="id_title_{$menu['menu_id']}">{$menu['menu_title']}</span>
 		{if($index_group!='price')}<span class="price">￥{$menu['price_int']}{if(intval($menu['price_float'])>0)}.{$menu['price_float']}{/if}</span>{/if}</li>
-		<li class="xcomment">(<a href="javascript:jsshop.comment({$menu['menu_id']});"><font color="#ff0000">{$menu['menu_comment_num']}</font>评论</a>)</li>
+		<li class="xcomment">(<a href="javascript:jsshop.comment({$menu['menu_id']});"><font color="#FC0062">{$menu['menu_comment_num']}</font>评论</a>)</li>
 	{/foreach}
 	</div>
 	{/foreach}
@@ -48,9 +50,11 @@
 	<li class="info"><span class='xtit'>{cfg:(shop_name,view)}</span><span><font color="#fc0062">餐品：</font>{$shop_menunum}</span><span><a href="javascript:jsheader.comment_shop()" style="color:#fc0062"><font color="#fc0062">评论：</font>{$shop_commentnum}</span></a></li>
 	{if(!empty($opentime['cont']))}
 	<li class="tit">{$opentime['title']}</li>
+	<img src="images/dividing-line-240.png">
 	<li>{$opentime['cont']}</li>
 	{/if}
 	<li class="tit">活动公告</li>
+	<img src="images/dividing-line-240.png">
 	<li class="li">
 	{foreach($arr_activitie as $item)}
 	<a href="?app_act=news.view&id={$item['article_id']}">{$item['article_title']}</a>
@@ -58,6 +62,7 @@
 	</li>
 	{if(!empty($shopintro['cont']))}
 	<li class="tit">{$shopintro['title']}</li>
+	<img src="images/dividing-line-240.png">
 	<li>{$shopintro['cont']}</li>
 	{/if}
 </div>
@@ -99,7 +104,7 @@
 	</div>
 </div>
 {include(footer)}
-<div class="h1">&nbsp;</div>
+<div id="cart_menu_opacity_bg" class="cart_menu_opacity_bg">&nbsp;</div>
 <script src="shop.default.js"></script>
 <script>
 kj.onload(function(){

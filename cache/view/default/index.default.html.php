@@ -14,6 +14,7 @@
 	<?php echo fun_kj::get_ads(1);?>
 	<?php if(count($arr_menu["tj"])>0){?>
 	<div class="title w1"><h1>新品/推荐</h1></div>
+	<img src="/webcss/default/images/dividing-line-740.png">
 	<div class="list w1">
 		<?php foreach($arr_menu["tj"] as $menu){ ?>
 		<ul>
@@ -31,13 +32,14 @@
 	<div class="w1" style="float:left" id="id_grouplist">
 	<?php foreach($arr_menu["list"] as $item){ ?>
 	<div class="title w1"><h1><?php echo $item["name"];?><a name="hash_price_<?php echo $item['id'];?>"></a></h1></div>
+	<img src="/webcss/default/images/dividing-line-740.png">
 	<div class="list2 w1">
 	<?php foreach($item['list'] as $menu){ ?>
 		<li onmouseover="jsshop.mouseover('<?php echo $menu['menu_id'];?>');" onmouseout="jsshop.mouseout('<?php echo $menu['menu_id'];?>');" onclick="jsshop.cart_add({id:'<?php echo $menu['menu_id'];?>',name:'<?php echo $menu['menu_title'];?>',pic:'<?php echo $menu['menu_pic_small'];?>',price:'<?php echo $menu['menu_price'];?>',type:'<?php echo $menu['menu_type'];?>'});" id="id_li_<?php echo $menu['menu_id'];?>">
 		<span class="x_nosel" id="id_nosel_<?php echo $menu['menu_id'];?>">&nbsp;</span>
 		<span class="tit" id="id_title_<?php echo $menu['menu_id'];?>"><?php echo $menu['menu_title'];?></span>
 		<?php if($index_group!='price'){?><span class="price">￥<?php echo $menu['price_int'];?><?php if(intval($menu['price_float'])>0){?>.<?php echo $menu['price_float'];?><?php }?></span><?php }?></li>
-		<li class="xcomment">(<a href="javascript:jsshop.comment(<?php echo $menu['menu_id'];?>);"><font color="#ff0000"><?php echo $menu['menu_comment_num'];?></font>评论</a>)</li>
+		<li class="xcomment">(<a href="javascript:jsshop.comment(<?php echo $menu['menu_id'];?>);"><font color="#FC0062"><?php echo $menu['menu_comment_num'];?></font>评论</a>)</li>
 	<?php }?>
 	</div>
 	<?php }?>
@@ -48,9 +50,11 @@
 	<li class="info"><span class='xtit'><?php echo cls_config::get("shop_name","view");?></span><span><font color="#fc0062">餐品：</font><?php echo $shop_menunum;?></span><span><a href="javascript:jsheader.comment_shop()" style="color:#fc0062"><font color="#fc0062">评论：</font><?php echo $shop_commentnum;?></span></a></li>
 	<?php if(!empty($opentime['cont'])){?>
 	<li class="tit"><?php echo $opentime['title'];?></li>
+	<img src="/webcss/default/images/dividing-line-240.png">
 	<li><?php echo $opentime['cont'];?></li>
 	<?php }?>
 	<li class="tit">活动公告</li>
+	<img src="/webcss/default/images/dividing-line-240.png">
 	<li class="li">
 	<?php foreach($arr_activitie as $item){ ?>
 	<a href="?app_act=news.view&id=<?php echo $item['article_id'];?>"><?php echo $item['article_title'];?></a>
@@ -58,6 +62,7 @@
 	</li>
 	<?php if(!empty($shopintro['cont'])){?>
 	<li class="tit"><?php echo $shopintro['title'];?></li>
+	<img src="/webcss/default/images/dividing-line-240.png">
 	<li><?php echo $shopintro['cont'];?></li>
 	<?php }?>
 </div>
@@ -99,7 +104,7 @@
 	</div>
 </div>
 <?php include cls_resolve::on_resolve('/default\/footer')?>
-<div class="h1">&nbsp;</div>
+<div id="cart_menu_opacity_bg" class="cart_menu_opacity_bg">&nbsp;</div>
 <script src="/webcss/default/shop.default.js"></script>
 <script>
 kj.onload(function(){

@@ -6,7 +6,7 @@
 	<span class="x_nosel" id="id_nosel_<?php echo $menu['menu_id'];?>">&nbsp;</span>
 	<span class="tit" id="id_title_<?php echo $menu['menu_id'];?>"><?php echo $menu['menu_title'];?></span>
 	<?php if($index_group!='price'){?><span class="price">￥<?php echo $menu['price_int'];?><?php if(intval($menu['price_float'])>0){?>.<?php echo $menu['price_float'];?><?php }?></span><?php }?></li>
-	<li class="xcomment">(<a href="javascript:jsshop.comment(<?php echo $menu['menu_id'];?>);"><font color="#ff0000"><?php echo $menu['menu_comment_num'];?></font>评论</a>)</li>
+	<li class="xcomment">(<a href="javascript:jsshop.comment(<?php echo $menu['menu_id'];?>);"><font color="#FC0062"><?php echo $menu['menu_comment_num'];?></font>评论</a>)</li>
 <?php }?>
 </div>
 <?php }?>

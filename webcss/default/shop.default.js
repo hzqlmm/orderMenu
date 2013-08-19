@@ -123,9 +123,11 @@ var jsshop = new function() {
 		if(show) {
 			kj.set("#id_cart_menu .x_top .x_4" , 'className' , 'x_6');
 			this.showcart_time('#id_cart_menu' , top , h-120 , -10);
+			this.showcart_time('#cart_menu_opacity_bg' , top , h-127 , -11);
 		} else {
 			kj.set("#id_cart_menu .x_top .x_6" , 'className' , 'x_4');
-			this.showcart_time('#id_cart_menu' , top , h , 10);
+			this.showcart_time('#id_cart_menu' , top , h-22 , 10);
+			this.showcart_time('#cart_menu_opacity_bg' , top , h-33 , 9);
 		}
 	}
 	this.showcart_time = function(id , top , top_target , val) {
@@ -141,10 +143,23 @@ var jsshop = new function() {
 			this.cart_lock = false;
 		}
 	}
+	// this.resize = function(){
+	// 	var h = document.documentElement.clientHeight;
+	// 	var offset = kj.offset("#id_left");
+	// 	kj.set("#id_cart_menu" , 'style.top' , (h-32) + "px");
+	// 	var left = document.documentElement.scrollLeft || document.body.scrollLeft;
+	// 	kj.set("#id_cart_menu" , 'style.left' , (offset.left-left) + "px");
+	// 	//定位label
+	// 	kj.set("#labelright",'style.top',(h/2)+'px');
+	// 	kj.set("#id_cart_menu .x_top .x_6" , 'className' , 'x_4');
+	// 	this.cart_show = 0;
+	// 	this.label_position();
+	// }	
 	this.resize = function(){
 		var h = document.documentElement.clientHeight;
 		var offset = kj.offset("#id_left");
-		kj.set("#id_cart_menu" , 'style.top' , (h-32) + "px");
+		kj.set("#id_cart_menu" , 'style.top' , (h-55) + "px");
+		kj.set("#cart_menu_opacity_bg" , 'style.top' , (h-65) + "px");
 		var left = document.documentElement.scrollLeft || document.body.scrollLeft;
 		kj.set("#id_cart_menu" , 'style.left' , (offset.left-left) + "px");
 		//定位label

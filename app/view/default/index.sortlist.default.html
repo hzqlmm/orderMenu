@@ -6,6 +6,6 @@
 	<span class="x_nosel" id="id_nosel_{$menu['menu_id']}">&nbsp;</span>
 	<span class="tit" id="id_title_{$menu['menu_id']}">{$menu['menu_title']}</span>
 	<span class="price">￥{$menu['price_int']}{if(intval($menu['price_float'])>0)}.{$menu['price_float']}{/if}</span></li>
-	<li class="xcomment">{if($sortby=='sold')}(销量：<font color="#ff0000">{$menu['menu_sold']}</font>){else}(<a href="javascript:jsshop.comment({$menu['menu_id']});"><font color="#ff0000">{$menu['menu_comment_num']}</font>评论</a>){/if}</li>
+	<li class="xcomment">{if($sortby=='sold')}(销量：<font color="#ff0000">{$menu['menu_sold']}</font>){else}(<a href="javascript:jsshop.comment({$menu['menu_id']});"><font color="#FC0062">{$menu['menu_comment_num']}</font>评论</a>){/if}</li>
 {/foreach}
 </div>
